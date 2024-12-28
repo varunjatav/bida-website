@@ -441,9 +441,9 @@ include_once 'core/tenderList.core.php';
                     </div>
 
                     <div class="tender-time">
-                        <div class="tt1">Release Date : <?php echo $row['ReleaseDate'] > 0 ? date('d/m/Y', $row['ReleaseDate']) : '--'; ?></div>
-                        <div class="tt2" style="text-align:center;">Pre-Bid meeting : <?php echo $row['PreBidMeeting'] > 0 ? date('d/m/Y', $row['PreBidMeeting']) : '--'; ?><br><?php echo $row['PreBidMeeting'] > 0 ? date('H:i', $row['PreBidMeeting']) : '--'; ?> Hrs</div>
-                        <div class="tt3">Bid Submission Deadline : <?php echo $row['BidSubmission'] == 0 ? '--' : date('d/m/Y', $row['BidSubmission']); ?></div>
+                        <div class="tt1"><?php echo $row['ReleaseDateTitle'] ? $row['ReleaseDateTitle']." :" : 'Release Date :'?>   <?php echo $row['ReleaseDate'] > 0 ? date('d/m/Y', $row['ReleaseDate']) : '--'; ?></div>
+                        <div class="tt2" style="text-align:center;"> <?php echo $row['PreBidMeetingTitle'] ? $row['PreBidMeetingTitle']." :" : 'Pre-Bid meeting :'?>  <?php echo $row['PreBidMeeting'] > 0 ? date('d/m/Y', $row['PreBidMeeting']) : '--'; ?><br><?php echo $row['PreBidMeeting'] > 0 ? date('H:i', $row['PreBidMeeting']) : '--'; ?> Hrs</div>
+                        <div class="tt3"><?php echo $row['PreBidSubmissionHead'] ? $row['PreBidSubmissionHead']." :" : 'Bid Submission Deadline :'?> <?php echo $row['BidSubmission'] == 0 ? '--' : date('d/m/Y', $row['BidSubmission']); ?></div>
                         <!-- <div class="tt4">Bid Closing : <?php //echo $row['TechnicalPresentation'] == 0 ? '--' : date('d/m/Y', $row['TechnicalPresentation']); ?></div> -->
                         <div class="tt3"><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($first_upload_file); ?>" target="_blank">Download Tender</a></div>
                     </div>

@@ -2,7 +2,7 @@
 
 error_reporting(0);
 $db_hostname = "localhost";
-$db_database = "bida_admin@2024";
+$db_database = "webadmin_live_2024";
 $db_username = "root";
 $db_password = "";
 define("DOCUMENT_MAX_SIZE", "2000");
