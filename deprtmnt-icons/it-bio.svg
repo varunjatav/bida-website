@@ -1,0 +1,10 @@
+<svg id="it-bio" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect id="Rectangle_12" data-name="Rectangle 12" width="60" height="60" rx="16" fill="#ffd958"/>
+  <g id="Group_137" data-name="Group 137" transform="translate(11 10.583)" opacity="0.7">
+    <path id="Path_54" data-name="Path 54" d="M36.417,2H22.167a1.5,1.5,0,0,0-1.583,1.583V5.167h-19C.633,5.167,0,5.483,0,6.433V27.017c0,.792.633,1.9,1.583,1.9H14.25v3.167H9.5c-.95,0-1.583.317-1.583,1.267v3.483H34.833C37.367,36.833,38,36.2,38,35.25V3.583A1.5,1.5,0,0,0,36.417,2ZM20.583,35.25H9.5V33.667H20.583Zm0-3.167H17.417V28.917h3.167Zm0-6.333H3.167V24.167H20.583Zm0-3.167H3.167V8.333H20.583Zm14.25,11.083H23.75V5.167H34.833Z"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" width="7.917" height="1.583" transform="translate(25.333 8.333)"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" width="7.917" height="1.583" transform="translate(25.333 11.5)"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" width="7.917" height="1.583" transform="translate(25.333 14.667)"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" cx="0.792" cy="0.792" r="0.792" transform="translate(28.5 28.917)"/>
+  </g>
+</svg>

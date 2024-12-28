@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded",function(){var links=document.querySelectorAll('.bblank a');links.forEach(function(link){link.addEventListener('click',function(event){var listItems=document.querySelectorAll('.bblank li');listItems.forEach(function(item){item.classList.remove('active')});this.parentElement.classList.add('active')})})});$('#show_overview').click(function(){$('html, body').animate({scrollTop:$('#overview').offset().top-140},500,function(){})})
+$('#show_objective').click(function(){$('html, body').animate({scrollTop:$('#objective').offset().top-140},500,function(){})})
+$('#show_eligibilty').click(function(){$('html, body').animate({scrollTop:$('#eligibilty').offset().top-140},500,function(){})})
+$('#show_non').click(function(){$('html, body').animate({scrollTop:$('#non').offset().top-140},500,function(){})})
+$('#show_insent').click(function(){$('html, body').animate({scrollTop:$('#insent').offset().top-140},500,function(){})})
+$('#show_dairy').click(function(){$('html, body').animate({scrollTop:$('#dairy').offset().top-140},500,function(){})});$('.moreless-button').click(function(){$('.moretext').slideToggle();if($('.moreless-button').text()=="Read more..."){$(this).text("Read less...")}else{$(this).text("Read more...")}})

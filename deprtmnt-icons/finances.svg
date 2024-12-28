@@ -1,0 +1,7 @@
+<svg id="finances" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect id="Rectangle_18" data-name="Rectangle 18" width="60" height="60" rx="16" fill="#b1ddb6"/>
+  <g id="Group_144" data-name="Group 144" transform="translate(13.235 13.235)" opacity="0.7">
+    <path id="Path_63" data-name="Path 63" d="M16.765,31.529A14.765,14.765,0,1,0,2,16.765,14.765,14.765,0,0,0,16.765,31.529Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Path_64" data-name="Path 64" d="M8,7h4.429m7.382,0H12.431m7.382,4.429H16.86M8,11.429H16.86M12.431,7a4.273,4.273,0,0,1,4.429,4.429M15.384,21.765,8,15.859h4.434a4.273,4.273,0,0,0,4.429-4.429" transform="translate(2.857 2.382)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>

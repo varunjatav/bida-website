@@ -1,0 +1,48 @@
+.white {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.white a {
+    color: #000 !important;
+}
+
+/* new css */
+.dsp {
+    display: none;
+}
+
+.landing-shadow-4 {
+    box-shadow: 0px 20px 50px -5px rgba(149, 164, 175, 0.4);
+    /* overflow: auto;
+    max-height: 315px; */
+}
+
+.btn-user-profile:hover {
+    background-color: rgb(177, 175, 175);
+    color: #fff;
+}
+
+.sector-a2 {
+    display: flex;
+    color: #fff;
+}
+
+.btn-user-profile[aria-expanded="true"] {
+    color: #fff;
+    background-color: #ff671f;
+}
+
+.ko-btn-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ko-btn-down a {
+    background-color: #00000085;
+    color: #fff;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 8px;
+}
