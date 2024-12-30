@@ -1,4 +1,9 @@
-<?php include "config.php"; ?>
+<?php 
+date_default_timezone_set('Asia/Kolkata');
+include_once 'config.php';
+include_once 'dbcon/db_connect.php';
+
+?>
 <!DOCTYPE html>
 
 <html class="no-js" lang="en">

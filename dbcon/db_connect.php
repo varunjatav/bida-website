@@ -1,5 +1,5 @@
 <?php
-include_once '../config.php';
+
 try {
     $db = new PDO("mysql:host=$db_hostname; dbname=$db_database", $db_username, $db_password, array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
