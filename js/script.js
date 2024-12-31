@@ -2,11 +2,12 @@ window.addEventListener("load", () => fetchNews("bundelkhand")); function reload
 
 
 
+console.log(mainWebsiteAdminPath);
 
 async function fetchNews(query) {
   try {
    
-    const response = await fetch('http://localhost/bida-website/core/getNews.core.php');
+    const response = await fetch(`${mainWebsiteAdminPath}/core/getNews.core.php`);
     
   
     if (!response.ok) {

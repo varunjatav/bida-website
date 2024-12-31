@@ -93,7 +93,11 @@ main {
 </head>
 
 <body>
-
+<script>
+    const mainWebsiteAdminPath = "<?php echo $website_main_path; ?>";
+   
+    
+</script>
 <script src="js/script.js"></script>
 
 
