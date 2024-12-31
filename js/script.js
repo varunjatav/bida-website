@@ -2,7 +2,7 @@ window.addEventListener("load", () => fetchNews("bundelkhand")); function reload
 
 
 
-console.log(mainWebsiteAdminPath);
+
 
 async function fetchNews(query) {
   try {
@@ -41,8 +41,9 @@ function bindData(articles) {
     // Skip articles without images
     if (!articleData.urlToImage) return;
     
+    
   const cardClone = newsCardTemplate.content.cloneNode(!0); 
-  // console.log("single article", article.News)
+ 
   fillDataInCard(cardClone, articleData); 
   cardsContainer.appendChild(cardClone) 
 }
@@ -56,8 +57,11 @@ function fillDataInCard(cardClone, article) {
   newsImg.src = article.urlToImage; 
   newsTitle.innerHTML = article.title;
   newsDesc.innerHTML = article.description; 
-  const date = new Date(article.publishedAt).
-  toLocaleString("en-US", { timeZone: "Asia/Jakarta", });
+ console.log(article.publishedAt);
+ 
+  const date = new Date(article.publishedAt).toLocaleString("en-US", { timeZone: "Asia/Jakarta", });
+
+  
    newsSource.innerHTML = `${article.source.name} · ${date}`; 
    cardClone.firstElementChild.addEventListener("click", () => { window.open(article.url, "_blank") }) 
   }
