@@ -26,7 +26,7 @@ $main_website_admin_path = $url_head . 'localhost/bida-website-admin';
 $website_admin_project_name = 'bida-website-admin';
 
 //main website path
-$website_main_path =  $url_head . 'localhost/bida-website';
+$website_main_path =  $url_head . $main_path;
 
 // tender_file path
 $website_tender_file_path = '../' . $website_admin_project_name . '/' . 'media/tender_file';
