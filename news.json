@@ -74,7 +74,8 @@
     "publishedAt": "2024-02-18T10:23:52Z", 
     "content": "Around 14,000 projects with an estimated investment size of Rs 10 lakh crore are ready for implementation during the Ground Breaking Ceremony in Lucknow on Monday, Uttar Pradesh Industrial and Infras… [+4977 chars]" 
   }, 
-   { "source": {
+   { 
+    "source": {
      "id": null, 
      "name": "The Indian Express"
       }, 
@@ -84,7 +85,8 @@
       "url": "https://indianexpress.com/article/cities/lucknow/cm-forms-team-to-reach-out-to-youth-on-up-investors-summit-9165924/", 
       "urlToImage": "https://images.indianexpress.com/2024/02/CM-yogi-1.jpg", 
       "publishedAt": "2024-02-16T23:42:30Z", 
-      "content": "Chief Minister Yogi Adityanath has constituted a special team, including 23 retired IAS, IPS and IFS officers and 19 senior educationists to introduce the youth to various dimensions of the Uttar Pra… [+2164 chars]" }, 
+      "content": "Chief Minister Yogi Adityanath has constituted a special team, including 23 retired IAS, IPS and IFS officers and 19 senior educationists to introduce the youth to various dimensions of the Uttar Pra… [+2164 chars]" 
+    }, 
       { "source": { 
         "id": "the-times-of-india", 
         "name": "The Times of India"
@@ -96,7 +98,8 @@
           "urlToImage": "https://img.etimg.com/thumb/msid-107522740,width-1200,height-630,imgsize-93424,overlay-economictimes/photo.jpg", 
           "publishedAt": "2024-02-08T09:40:32Z", 
           "content": "Uttar Pradesh Chief Minister Yogi Adityanath has announced that the government will soon launch a new program for families -- Family ID Card. He announced this in Uttar Pradesh Assembly during the de… [+2838 chars]"
-         },
+         }
+         ,
     { 
       "source": { 
         "id": null, 

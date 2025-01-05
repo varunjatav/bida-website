@@ -4,6 +4,9 @@ include_once 'config.php';
 include_once 'dbcon/db_connect.php';
 include_once 'functions/common.function.php';
 include_once 'core/tenderList.core.php';
+
+
+
 ?>
 <!DOCTYPE html>
 
@@ -424,6 +427,7 @@ include_once 'core/tenderList.core.php';
             $tender_name_array = array();
             $date_array = array();
             while ($row = $sql->fetch()) {
+               
                 $first_upload_file_array = array();
                 $file_name_array = explode('@@', $row['Attachment']);
                 $tender_name_array = explode('@@', $row['FileName']);
@@ -453,7 +457,7 @@ include_once 'core/tenderList.core.php';
                         <div style="width: 28%;"><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($first_upload_file); ?>"><img src="img/pdf-icon.png" alt="pdf" style="width: 60px;"></a></div>
                     </div>
                     <hr>
-                    <?php if (count_($tender_name_array) > 1) { ?>
+                    <?php if (count_($tender_name_array) > 0) { ?>
                         <div class="tender-links-div">
                             <div class="links">Latest Corrigendum List :</div>
                             <div class="link1">
@@ -462,9 +466,11 @@ include_once 'core/tenderList.core.php';
                                     $tender_file_name = array();
                                     $tender_doc = array();
                                     foreach ($tender_name_array as $tkey => $tval) {
-                                        if ($tkey == 0) {
-                                            continue;
-                                        }
+
+                                      
+                                        // if ($tkey == 0) {
+                                        //     continue;
+                                        // }
 
                                         $tender_file_name = json_decode($tval, true);
                                         $tender_doc = json_decode($file_name_array[$tkey], true);
