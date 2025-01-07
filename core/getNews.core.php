@@ -28,13 +28,6 @@ try {
     
     header('Content-Type: application/json');
 
-
-    // $news_data = [
-    //     'total_count' => $total_count,
-    //     'data' => $data
-    // ];
-
-    // echo $news_data;
     echo json_encode([
         'total_count' => $total_count,
         'data' => $data
