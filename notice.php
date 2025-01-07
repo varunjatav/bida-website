@@ -398,7 +398,7 @@ include_once 'core/noticeList.core.php';
                     <div class="tender-head">
                         <div class="tender-count"><?php echo $i++; ?></div>
                         <div class="tender-title"><?php echo $row['NoticeTitle'] ? $row['NoticeTitle'] : '--'; ?></div>
-                        <div class="tender-info"><span>Notice Referance No. :</span><span><?php echo $row['NoticeRefrenceNo'] ? $row['NoticeRefrenceNo'] : '--'; ?></span></div>
+                        <div class="tender-info"><span>Notice Reference No. :</span><span><?php echo $row['NoticeRefrenceNo'] ? $row['NoticeRefrenceNo'] : '--'; ?></span></div>
                     </div>
 
                     <div class="tender-time">

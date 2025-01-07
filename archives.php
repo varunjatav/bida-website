@@ -400,7 +400,7 @@ include_once 'core/archivesList.core.php';
                 <div class="tender-head">
                     <div class="tender-count">01</div>
                     <div class="tender-title">Hiring a Consultant
-for Preparation of Vision Document and
+   for Preparation of Vision Document and
 Master Plan 2045 for Bundelkhand
 Industrial Development Authority BIDA</div>
                     <div class="tender-info"><span>Tender Referance No. :</span><span>2024_BUIDA_890788_1</span></div>
@@ -448,7 +448,7 @@ Industrial Development Authority BIDA</div>
                     <div class="tender-head">
                         <div class="tender-count"><?php echo $i++; ?></div>
                         <div class="tender-title"><?php echo $row['TenderTitle'] ? $row['TenderTitle'] : '--'; ?></div>
-                        <div class="tender-info"><span>Tender Referance No. :</span><span><?php echo $row['TenderRefrenceNo'] ? $row['TenderRefrenceNo'] : '--'; ?></span></div>
+                        <div class="tender-info"><span>Tender Reference No. :</span><span><?php echo $row['TenderRefrenceNo'] ? $row['TenderRefrenceNo'] : '--'; ?></span></div>
                     </div>
 
                     <div class="tender-time">

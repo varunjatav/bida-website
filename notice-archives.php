@@ -395,7 +395,7 @@ include_once 'core/noticeArchiveList.core.php';
                 <div class="tender-head">
                     <div class="tender-count">01</div>
                     <div class="tender-title">RFQ for Procurement of Laptops for Invest India Employees</div>
-                    <div class="tender-info"><span>Notice Referance No. :</span><span>IND/INV/21-22/IT-0002</span></div>
+                    <div class="tender-info"><span>Notice Reference No. :</span><span>IND/INV/21-22/IT-0002</span></div>
                 </div>
 
                 <div class="tender-time">

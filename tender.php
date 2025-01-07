@@ -441,7 +441,7 @@ include_once 'core/tenderList.core.php';
                     <div class="tender-head">
                         <div class="tender-count"><?php echo $i++; ?></div>
                         <div class="tender-title"><?php echo $row['TenderTitle'] ? $row['TenderTitle'] : '--'; ?></div>
-                        <div class="tender-info"><span>Tender Referance No. :</span><span><?php echo $row['TenderRefrenceNo'] ? $row['TenderRefrenceNo'] : '--'; ?></span></div>
+                        <div class="tender-info"><span>Tender Reference No. :</span><span><?php echo $row['TenderRefrenceNo'] ? $row['TenderRefrenceNo'] : '--'; ?></span></div>
                     </div>
 
                     <div class="tender-time">
