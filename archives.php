@@ -464,7 +464,7 @@ Industrial Development Authority BIDA</div>
                         <div style="width: 28%;"><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($first_upload_file); ?>"><img src="img/pdf-icon.png" alt="pdf" style="width: 60px;"></a></div>
                     </div>
                     <hr>
-                    <?php if (count_($tender_name_array) > 1) { ?>
+                    <?php if (count_($tender_name_array) > 0) { ?>
                         <div class="tender-links-div">
                             <div class="links">Latest Corrigendum List :</div>
                             <div class="link1">
@@ -473,16 +473,17 @@ Industrial Development Authority BIDA</div>
                                     $tender_file_name = array();
                                     $tender_doc = array();
                                     foreach ($tender_name_array as $tkey => $tval) {
-                                        if ($tkey == 0) {
-                                            continue;
-                                        }
+                                        // if ($tkey == 0) {
+                                        //     continue;
+                                        // }
 
                                         $tender_file_name = json_decode($tval, true);
                                         $tender_doc = json_decode($file_name_array[$tkey], true);
 
                                         foreach ($tender_file_name as $tenderkey => $tenderval) {
                                     ?>
-                                            <li><span><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($tender_doc[$tenderkey]); ?>" style="color:#FF0000"><?php echo $tenderval ? $tenderval : '--'; ?></a>&nbsp;</span><span style="color:#6a6c71">(<?php echo $date_array[$tkey] == 0 ? '--' : date('d/m/Y', $date_array[$tkey]); ?>)</span></li>
+                                            <li><span><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($tender_doc[$tenderkey]); ?>" style="color:#FF0000"><?php echo $tenderval ? $tenderval : '--'; ?></a>&nbsp;</span>
+                                            <!-- <span style="color:#6a6c71">(<?php // echo $date_array[$tkey] == 0 ? '--' : date('d/m/Y', $date_array[$tkey]); ?>)</span></li> -->
                                     <?php }
                                     } ?>
                                 </ol>

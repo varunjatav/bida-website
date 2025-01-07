@@ -426,6 +426,7 @@ include_once 'core/tenderList.core.php';
             $file_name_array = array();
             $tender_name_array = array();
             $date_array = array();
+
             while ($row = $sql->fetch()) {              
                 $first_upload_file_array = array();
                 $file_name_array = explode('@@', $row['Attachment']);
@@ -433,6 +434,7 @@ include_once 'core/tenderList.core.php';
                 $date_array = explode('@@', $row['Dated']);
                 $first_upload_file_array = json_decode($file_name_array[0], true);
                 $first_upload_file = $first_upload_file_array[0];
+              
             ?>
                 <div class="tender-card">
 
@@ -446,8 +448,8 @@ include_once 'core/tenderList.core.php';
                         <div class="tt1"><?php echo $row['ReleaseDateTitle'] ? $row['ReleaseDateTitle']." :" : 'Release Date :'?>   <?php echo $row['ReleaseDate'] > 0 ? date('d/m/Y', $row['ReleaseDate']) : '--'; ?></div>
                         <div class="tt2" style="text-align:center;"> <?php echo $row['PreBidMeetingTitle'] ? $row['PreBidMeetingTitle']." :" : 'Pre-Bid meeting :'?>  <?php echo $row['PreBidMeeting'] > 0 ? date('d/m/Y', $row['PreBidMeeting']) : '--'; ?><br><?php echo $row['PreBidMeeting'] > 0 ? date('H:i', $row['PreBidMeeting']) : '--'; ?> Hrs</div>
                         <div class="tt3"><?php echo $row['PreBidSubmissionHead'] ? $row['PreBidSubmissionHead']." :" : 'Bid Submission Deadline :'?> <?php echo $row['BidSubmission'] == 0 ? '--' : date('d/m/Y', $row['BidSubmission']); ?></div>
-                        <!-- <div class="tt4">Financial Bid Opening : <?php echo $row['FinancialBidOpening'] == 0 ? '--' : date('d/m/Y', $row['FinancialBidOpening']); ?></div>
-                        <div class="tt4">Bid Closing : <?php echo $row['TechnicalPresentation'] == 0 ? '--' : date('d/m/Y', $row['TechnicalPresentation']); ?></div> -->
+                        <!-- <div class="tt4">Financial Bid Opening : <?php //echo $row['FinancialBidOpening'] == 0 ? '--' : date('d/m/Y', $row['FinancialBidOpening']); ?></div> -->
+                      <!--  <div class="tt4">Bid Closing : <?php //echo $row['TechnicalPresentation'] == 0 ? '--' : date('d/m/Y', $row['TechnicalPresentation']); ?></div> -->
                         <div class="tt3"><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($first_upload_file); ?>" target="_blank">Download Tender</a></div>
                     </div>
 
@@ -465,7 +467,7 @@ include_once 'core/tenderList.core.php';
                                     $tender_file_name = array();
                                     $tender_doc = array();
                                     foreach ($tender_name_array as $tkey => $tval) {
-
+                                        
                                       
                                         // if ($tkey == 0) {
                                         //     continue;
@@ -475,6 +477,7 @@ include_once 'core/tenderList.core.php';
                                         $tender_doc = json_decode($file_name_array[$tkey], true);
 
                                         foreach ($tender_file_name as $tenderkey => $tenderval) {
+                                            
                                     ?>
                                             <li><span><a href="download?type=<?php echo encryptIt('tender_cor'); ?>&file=<?php echo encryptIt($tender_doc[$tenderkey]); ?>" style="color:#FF0000"><?php echo $tenderval ? $tenderval : '--'; ?></a>&nbsp;</span>
                                             <!-- <span style="color:#6a6c71">(<?php //echo $date_array[$tkey] == 0 ? '--' : date('d/m/Y', $date_array[$tkey]); ?>)</span> -->
