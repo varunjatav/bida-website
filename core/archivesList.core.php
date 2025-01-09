@@ -1,6 +1,6 @@
 <?php
 
-$sql = "SELECT SQL_CALC_FOUND_ROWS T1.ID, T1.TenderTitle, T1.TenderRefrenceNo, T1.ReleaseDate, T1.PreBidMeeting, T1.BidSubmission, T1.TechnicalPresentation, T1.TenderDescription, T1.TenderStatus, T1.BidOpeningPreQualificationCheck, T1.FinancialBidOpening, T1.Active, T1.DateCreated, GROUP_CONCAT(T2.FileName) AS FileName, GROUP_CONCAT(T2.Description SEPARATOR '@@') AS Description, GROUP_CONCAT(T2.Attachment SEPARATOR '@@') AS Attachment, GROUP_CONCAT(T2.Date SEPARATOR '@@') AS Dated
+$sql = "SELECT SQL_CALC_FOUND_ROWS T1.ID, T1.TenderTitle, T1.TenderRefrenceNo, T1.ReleaseDate, T1.PreBidMeeting, T1.BidSubmission, T1.TechnicalPresentation, T1.TenderDescription, T1.TenderStatus, T1.BidOpeningPreQualificationCheck, T1.FinancialBidOpening, T1.Active, T1.DateCreated,T1.PreBidMeetingTitle,T1.ReleaseDateTitle,T1.PreBidSubmissionHead, GROUP_CONCAT(T2.FileName) AS FileName, GROUP_CONCAT(T2.Description SEPARATOR '@@') AS Description, GROUP_CONCAT(T2.Attachment SEPARATOR '@@') AS Attachment, GROUP_CONCAT(T2.Date SEPARATOR '@@') AS Dated
                           FROM bida_tender T1
                           LEFT JOIN bida_tender_attachments T2 ON T2.TenderID = T1.ID
                           WHERE T1.Active = ?
