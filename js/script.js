@@ -57,11 +57,10 @@ function fillDataInCard(cardClone, article) {
   newsImg.src = article.urlToImage; 
   newsTitle.innerHTML = article.title;
   newsDesc.innerHTML = article.description; 
- console.log(article.publishedAt);
+
  
   const date = new Date(article.publishedAt).toLocaleString("en-US", { timeZone: "Asia/Jakarta", });
 
-  
    newsSource.innerHTML = `${article.source.name} · ${date}`; 
    cardClone.firstElementChild.addEventListener("click", () => { window.open(article.url, "_blank") }) 
   }
