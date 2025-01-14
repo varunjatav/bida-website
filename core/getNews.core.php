@@ -1,9 +1,6 @@
 <?php
 include_once '../config.php';
 include_once '../dbcon/db_connect.php';
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 
 
@@ -11,11 +8,12 @@ try {
     // Your database query
     $sql = "SELECT SQL_CALC_FOUND_ROWS T1.ID, T1.News
             FROM bida_news T1
-            WHERE 1 = 1";
+           WHERE T1.Active = ?";
     $sql .= " GROUP BY T1.ID ORDER BY T1.ID DESC";
     
     // Prepare and execute SQL query
     $sql = $db->prepare($sql);
+    $sql->bindValue(1,1);
     $sql->execute();
 
     // Get the total count of rows
